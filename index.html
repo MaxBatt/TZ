@@ -511,43 +511,44 @@ Zögern Sie nicht und vereinbaren Sie gleich einen persönlichen Termin unter de
         <div class="box" data-category="Design">
             <div data-thumbnail="img/gallery/Design/thumbnails/demo1.jpg"></div>
 			<div data-image="img/gallery/Design/demo1.jpg"></div>
-			<div class="thumbnail-caption"><h3>Butter Brothers</h3></div>
-			<div class="lightbox-text">Butter Brothers <span>In Design</span></div>
+			<div data-clearimage="img/gallery/Design/thumbnails/demo1_clear.jpg"></div>
+			<div class="thumbnail-caption"></div>
         </div>
       <!-- 2-->
         <div class="box" data-category="Illustration">
             <div data-thumbnail="img/gallery/Illustrations/thumbnails/illustration1.jpg"></div>
 			<div data-image="img/gallery/Illustrations/illustration1.jpg"></div>
-			<div class="thumbnail-caption"><h3>My Greed</h3></div>
-			<div class="lightbox-text">My Greed <span>In Illustration</span></div>
+			<div class="thumbnail-caption"></div>
+			<div class="lightbox-text">  <span> </span></div>
         </div>
       <!-- 3-->
         <div class="box" data-category="Photography">
             <div data-thumbnail="img/gallery/Photography/thumbnails/photography1.jpg"></div>
 			<div data-image="img/gallery/Photography/photography1.jpg"></div>
-			<div class="thumbnail-caption"><h3>Old Kodak</h3></div>
-			<div class="lightbox-text">Old Kodak <span>In Photography</span></div>
+			<div class="thumbnail-caption"></div>
+			<div class="lightbox-text"> <span></span></div>
         </div>
 	  <!-- 4-->
 		<div class="box" data-category="Illustration">
 			<div data-thumbnail="img/gallery/Illustrations/thumbnails/illustration2.jpg"></div>
 			<div data-image="img/gallery/Illustrations/illustration2.jpg"></div>
-			<div class="thumbnail-caption"><h3>Ron Weasley</h3></div>
-			<div class="lightbox-text">Ron Weasley <span>In Illustration</span></div>
+			<div class="thumbnail-caption"></div>
+			<div class="lightbox-text"> <span></span></div>
         </div>
       <!-- 5-->
 		<div class="box" data-category="Photography">
             <div data-thumbnail="img/gallery/Photography/thumbnails/photography2.jpg"></div>
 			<div data-image="img/gallery/Photography/photography2.jpg"></div>
-			<div class="thumbnail-caption"><h3>London Underground</h3></div>
-			<div class="lightbox-text">London Underground<span>In Photography</span></div>
+			<div class="thumbnail-caption"></div>
+			<div class="lightbox-text"><span></span></div>
         </div>
       <!-- 6-->
         <div class="box" data-category="Design">
             <div data-thumbnail="img/gallery/Design/thumbnails/demo2.jpg"></div>
 			<div data-image="img/gallery/Design/demo2.jpg"></div>
-			<div class="thumbnail-caption"><h3>Custom Podcast Lettering</h3></div>
-			<div class="lightbox-text">Custom Podcast Lettering <span>In Design</span></div>
+			<div data-clearimage="img/gallery/Design/thumbnails/demo2_clear.jpg"></div>
+			<div class="thumbnail-caption"></div>
+			<div class="lightbox-text"> <span></span></div>
         </div>
       <!-- 7-->
        <div class="box" data-category="Design">
@@ -876,7 +877,7 @@ Zögern Sie nicht und vereinbaren Sie gleich einen persönlichen Termin unter de
 	$('document').ready(function(){
 	$('#grid').grid({
 		columnWidth: 'auto', 
-		captionType: 'grid-fade', 
+		captionType: 'classic', 
 		imagesToLoad: 3, 
 		imagesToLoadStart: 9, 
 		isFitWidth: true,  
@@ -885,7 +886,12 @@ Zögern Sie nicht und vereinbaren Sie gleich einen persönlichen Termin unter de
 		columnWidth: 'auto', 
 		columnMinWidth: 300, 
 		caption: true, 
-		lightBoxSpeedFx: 500, 
+		lightboxPlayBtn: true,
+		lightBoxAutoPlay: true,
+		lightBoxPlayInterval: 5000,
+		lightBoxSpeedFx: 450, 
+		lightboxKeyboardNav: true,
+		lightBoxText: false,
 	});<!-- TOP SECTION MAX HEIGHT -->
 		var windowHeight = $(window).height();
 		$('.parallax-section').height( windowHeight );
