@@ -1051,7 +1051,7 @@ font-size:15px; line-height:30px!important;
 .autoGrid-play, .autoGrid-close {  float: right; }
 .autoGrid-next, .autoGrid-prev { float: right; }
 .iconPlay, .iconClose, .iconNext, .iconPrev{
-  	font-family: 'Labrador-B-Regular';
+  	font-family: 'FontAwesome';
 	speak: none;
 	font-size: 26px;
 	line-height: 62px;
