@@ -32,7 +32,7 @@ a:focus {color:#3498DB; }
 .grida figcaption { background:#3498DB; }
 
 /**** WORK - HOVER BG - LOAD MORE HOVER - LIGHTBOX BAR ****/
-.thumbnail-caption{ background: #3498DB;}
+.thumbnail-caption{ background: #000;}
 .grid-loadMore:hover{ color:#3498DB!important; }
 .autoGrid-nav{ background: #3498DB; }
 
